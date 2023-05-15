@@ -1,0 +1,51 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title>Insta-share</title>
+ <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+ </head>
+<body>
+	<section class="instagram">
+		<div class="card">
+			<div class="row">
+			<img src="image/testimonials-4.jpg">
+				<div class="item">
+					<div class="icon">
+						<i class="bi bi-heart heart"></i>
+						<i class="bi bi-chat"></i>
+						<i class="bi bi-send over"></i>
+						<i class="bi bi-heart-fill fill"></i>
+						<div class="share-icon">
+						<i class="bi bi-x remove"></i>
+					</div>
+					</div>
+						
+				</div>		
+					
+					
+		</div>
+		</div>
+	</section>
+		
+	 <script>
+			let send=document.getElementsByClassName("over")[0];
+			
+			send.addEventListener("click",mouseover)
+				function mouseover(){
+				 let parent=this.parentNode;
+				 let show=parent.querySelector(".share-icon");
+				 
+					show.classList.add("share-show");
+					}
+			let close=document.getElementsByClassName("remove")[0];	 
+				close.addEventListener("click",mouseleave)
+				function mouseleave(){
+				let parent=this.parentNode;
+					parent.classList.remove("share-show");
+					}
+		</script>
+		
+	 </body>
+</html>
